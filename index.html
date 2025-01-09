@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__content">
+            <img src="img/logo.png" alt="Logotipo de AluraGeek" class="header__logo">
+            <h1 class="header__title">AluraGeek</h1>
+        </div>
+        
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Sección de productos -->
+        <section class="productos">
+            <h1>Mis Productos</h1>
+            <div class="productos__lista" data-product>
+                <!-- Las tarjetas se generarán dinámicamente -->
+            </div>
+            <p class="productos__mensaje">No se han agregado productos.</p>
+        </section>
+
+        <!-- Formulario para agregar productos -->
+        <section class="formulario">
+            <h1>Agregar Producto</h1>
+            <form class="formulario__form" data-form>
+                <label for="nombre">Nombre del Producto:</label>
+                <input type="text" id="nombre" name="nombre" required data-nombre>
+
+                <label for="precio">Precio:</label>
+                <input type="text" id="precio" name="precio" required data-precio>
+
+                <label for="imagen">URL de la Imagen:</label>
+                <input type="url" id="imagen" name="imagen" required data-imagen>
+
+                <div class="formulario__botones">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="img/logo.png" alt="Logotipo de AluraGeek" class="footer__logo">
+        <p>Desarrollado por Cristian Conci</p>
+        <p>&copy; 2025 - Desarrollado para Alura LATAM</p>
+    </footer>
+    <script type="module" src="js/controllers/main.js"></script>
+</body>
+</html>
